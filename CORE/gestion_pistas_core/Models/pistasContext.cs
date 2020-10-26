@@ -21,7 +21,7 @@ namespace gestion_pistas_core.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=38.67.136.229;Database=pistas;User ID=NewData;Password=20uhCSTC8N20*");
+                optionsBuilder.UseSqlServer("Server=localhost;Database=pistas;User ID=NewData;Password=asd*");
             }
         }
 
