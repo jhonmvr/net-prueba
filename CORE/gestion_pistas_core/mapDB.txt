@@ -1,0 +1,4 @@
+﻿Scaffold-DbContext "Server=38.67.136.229;Database=pistas;User ID=NewData;Password=20uhCSTC8N20*" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -f 
+
+
+Scaffold-DbContext "Server=38.67.136.229;Database=pistas;User ID=NewData;Password=20uhCSTC8N20*" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Tables "PRUEBA" -ContextDir Context -Context BlogContext -f

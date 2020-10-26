@@ -1,0 +1,41 @@
+
+<aside class="sidebar">
+    <a routerLink="" id="logo"><img width="103" alt="MICRO FACTORY CAPITAL" src=".{{iconoUrl}}/assets/images/logo.svg"></a>
+    <form novalidate [formGroup]="formLogin" class="forms" >
+        <fieldset>
+            <input type="text" placeholder="Escriba su usuario"  formControlName="usuario">
+            <div class="error" *ngIf="formLogin.controls.usuario.touched && formLogin.controls.usuario.errors && formLogin.controls.usuario.errors.required">Usuario es requerido</div>
+            <div class="error" *ngIf="formLogin.controls.usuario.touched && formLogin.controls.usuario.errors && (formLogin.controls.usuario.errors.minlength || formLogin.controls.usuario.errors.maxlength)">
+                El campo usuario debe tener minimo 2 y maximo 150</div>
+        </fieldset>
+        <fieldset>
+            <input type="password" placeholder="Escriba su contrasena" formControlName="password">
+            <div class="error" *ngIf="formLogin.controls.password.touched && formLogin.controls.password.errors && formLogin.controls.password.errors.required">Password es requerido</div>
+            <div class="error" *ngIf="formLogin.controls.password.touched && formLogin.controls.password.errors && (formLogin.controls.password.errors.minlength || formLogin.controls.password.errors.maxlength)">
+                El campo usuario debe tener minimo 2 y maximo 20</div>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" id="recordar">
+            <label for="recordar">Recordar usuario</label>
+        </fieldset>
+        <div class="footer-forms">
+            <input type="button" [disabled]="!formLogin.valid" value="Ingresar" class="btn-primary" (click)="onLogin()">
+        </div>
+    </form>
+    <!--form class="forms">
+        <fieldset>
+            <input type="text" placeholder="Escriba Nombres o Razón Social">
+        </fieldset>
+        <fieldset>
+            <input type="text" placeholder="Escriba Apellidos">
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" id="recordar">
+            <label for="recordar">Recordar usuario</label>
+        </fieldset>
+        <div class="footer-forms">
+            <input type="button" value="Ingresar" class="btn-primary" (click)="onLogin()">
+        </div>
+    </form-->
+    <div id="copysidebar">© MFC 2019. Derechos reservados.</div>
+</aside>

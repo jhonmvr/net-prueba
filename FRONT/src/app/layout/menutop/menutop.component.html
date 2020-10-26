@@ -1,0 +1,28 @@
+<header>
+    <a routerLink="" id="logo"><img width="103" alt="MICRO FACTORY CAPITAL" src=".{{iconoUrl}}/assets/images/logo.svg"></a>
+    <span id="mobile-toggle-menu">
+        <img width="32" alt="Menu" src="/mfc-pista/assets/images/menu.svg">
+    </span>
+    <nav>
+        <span class="avatar">
+            <!--a routerLink="/components/usuario/cuenta"><img width="24" alt="Editar Perfil" src="/mfc-pista/assets/images/gear.svg"></a-->
+            <a href="javascript:void(0);" [matMenuTriggerFor]="menu" src="/mfc-pista/assets/images/gear.svg"><img width="24" alt="Opciones" src="/mfc-pista/assets/images/gear.svg"></a>
+            <img width="38" alt="Perfil" src="/mfc-pista/assets/images/avatar.svg">
+            <span>{{email}}</span>
+        </span>
+    </nav>
+    
+    <!--button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" style="float: right">
+        <mat-icon>more_vert</mat-icon>
+    </button-->
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/components/usuario/cuenta">
+            <mat-icon>edit</mat-icon>
+            <span>Editar Perfil</span>
+          </button>
+        <button mat-menu-item (click)="salir()">
+          <mat-icon>undo</mat-icon>
+          <span>Salir</span>
+        </button>
+    </mat-menu>
+</header>

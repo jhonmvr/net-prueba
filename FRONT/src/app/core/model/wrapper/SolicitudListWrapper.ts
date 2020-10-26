@@ -1,0 +1,26 @@
+export class SolicituListWrapper {
+    id;
+    numeroSolicitud;
+    ciSolicitante;
+    nombreSolicitante;
+    perfilCliente;
+    score;
+    concesionario;
+    sucursal;
+    estado;
+    subEstado;
+    asesor;
+    asesorConsecionario;
+    pvp;
+    entrada;
+    plazo;
+    montoFinanciar;
+    coutaTotal;
+    capacidadPago;
+    tiempo;
+    alerta;
+    notificacion;
+    fechaSolicitud;
+    fechaCreacion;
+    marca;
+}

@@ -1,0 +1,21 @@
+<aside class="sidebar">
+    <nav>
+        <a [routerLink]="['/inicio']" routerLinkActive="active" class="label-separator"><img width="18" alt="Inicio" src=".{{iconoUrl}}/assets/images/icon-inicio.svg"><span>Inicio</span></a>
+        <div class="content-submenu content-submenu-fabrica" routerLinkActive="active">
+            <span class="label-separator has-childs"><img width="20" alt="Análisis de Crédito" src=".{{iconoUrl}}/assets/images/icon-analisis.svg"><span>Análisis de Crédito</span></span>
+            <a [routerLink]="['/pistas/solicitud/list']" class="submenu" routerLinkActive="active"><img src=".{{iconoUrl}}/assets/images/icon-verificaciones.svg">Listado Pistas</a>
+            <a target="_blank" [routerLink]="['/pistas/gestion-solicitud']" class="submenu" routerLinkActive="active"><img src=".{{iconoUrl}}/assets/images/icon-excepciones.svg">Nueva Pista</a>
+        </div>
+        <div class="content-submenu content-submenu-config" routerLinkActive="active">
+            <span class="label-separator has-childs"><img width="20" alt="Análisis de Crédito" src=".{{iconoUrl}}/assets/images/icon-config.svg"><span>Configuración</span></span>
+            <a [routerLink]="['/pistas/asesor/list']" class="submenu" routerLinkActive="active"><img src=".{{iconoUrl}}/assets/images/icon-admin.svg">Asesores</a>
+            <a [routerLink]="['/pistas/semaforizacion/list']" class="submenu" routerLinkActive="active"><img src=".{{iconoUrl}}/assets/images/icon-add.svg">Semaforizacion</a>
+            <a [routerLink]="['/pistas/ordenamiento/list']" class="submenu" routerLinkActive="active"><img src=".{{iconoUrl}}/assets/images/icon-reporte.svg">ordenamiento</a>
+            <a [routerLink]="['/pistas/concesionario-asesor/list']" class="submenu" routerLinkActive="active"><img src=".{{iconoUrl}}/assets/images/icon-admin.svg">Agente Concesionario</a>
+        </div>
+    </nav>
+    <div class="footer-sidebar">
+        <span>&copy; MFC {{ anio }}. Derechos reservados.</span>
+    </div>
+    <span id="min-max-sidebar"></span>
+</aside>
